@@ -1,4 +1,4 @@
-import { useEffect, lazy } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useAuth } from '../hooks/useAuth';
 import { refreshUser } from '../redux/auth/operations';
@@ -10,11 +10,6 @@ import { Home } from 'pages/Home/Home';
 import { Register } from '../pages/Register/Register';
 import { Login } from '../pages/Login/Login';
 import { PhonebookPage } from 'pages/Phonebook/Phonebook';
-
-// const HomePage = lazy(() => import('../pages/Home/Home'));
-// const RegisterPage = lazy(() => import('../pages/Register/Register'));
-// const LoginPage = lazy(() => import('../pages/Login/Login'));
-// const ContactsPage = lazy(() => import('../pages/Phonebook/Phonebook'));
 
 export const App = () => {
   const dispatch = useDispatch();
